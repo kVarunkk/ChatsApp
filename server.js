@@ -20,7 +20,7 @@ const io = socketio(server);
 // To get files from static folder
 app.use(express.static(path.join(__dirname, 'public')));
 
-const botName = 'WhatsApp';
+const botName = 'ChatsApp';
 
 // Run when client connects
 io.on('connection', socket => {
@@ -32,7 +32,7 @@ io.on('connection', socket => {
     socket.join(user.room);
 
     // send information only to user
-    socket.emit('message', formatMessage(botName, 'Welcome to WhatsApp!'));
+    socket.emit('message', formatMessage(botName, 'Welcome to ChatsApp!'));
 
     // send information to everyone except user
     socket.broadcast.to(user.room).emit('message',formatMessage(botName, `${user.username} has joined the chat`));
