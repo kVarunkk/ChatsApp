@@ -214,10 +214,44 @@ a {
 	border-radius: 5px;
 	overflow-wrap: break-word;
 	box-shadow: 2px 2px 8px rgb(122, 122, 122);
+	max-width: 40%;
 }
 
-.message{
+.message1{
+	position: relative;
+	padding: 10px;
+	width: fit-content;
+	margin-bottom: 15px;
+	background-color: white;
+	border-radius: 5px;
+	overflow-wrap: break-word;
+	box-shadow: 2px 2px 8px rgb(122, 122, 122);
 	max-width: 40%;
+	margin-left: auto;
+}
+
+.message1:after{
+	content: " ";
+  position: absolute;
+  right: -9px;
+  top: 15px;
+  border-top: 10px solid transparent;
+  border-right: none;
+  border-left: 10px solid rgb(255, 255, 255);
+  border-bottom: 10px solid transparent;
+}
+
+.chat-messages .message1 .meta {
+	font-size: 13px;
+	font-weight: bold;
+	color: red;
+	opacity: 0.7;
+	margin-bottom: 10px;
+	margin-top: 0;
+}
+
+.chat-messages .message1 .meta span {
+	color: #777;
 }
 
 .text{
