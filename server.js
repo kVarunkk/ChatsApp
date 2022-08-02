@@ -87,4 +87,5 @@ io.on("connection", (socket) => {
 
 const PORT = process.env.PORT || 3000;
 
+// Using app.listen(3000) will not work here, as it creates a new HTTP server.
 server.listen(PORT, () => console.log(`Server running on port ${PORT}`));
