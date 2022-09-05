@@ -18,8 +18,9 @@ Chat Application made using JavaScript, express.js and node.js.
 - node
 - npm
 
-1. Clone this repository
-2. Install server dependencies
+1. Fork this repository
+2. Clone this repository
+3. Install server dependencies
 
 ```
 $ cd server
