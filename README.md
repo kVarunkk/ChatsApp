@@ -1,4 +1,4 @@
-# Twitter-clone
+# ChatsApp
 
 Chat Application made using JavaScript, express.js and node.js.
 
